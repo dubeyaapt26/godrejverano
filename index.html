@@ -23,6 +23,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="preload" as="image" href="images/hero-1200.webp" imagesrcset="images/hero-768.webp 768w, images/hero-1200.webp 1200w, images/hero-1920.webp 1920w" imagesizes="100vw">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
@@ -61,7 +62,7 @@
       "description": "Godrej Verano on Golf Course Extension Road, Sector 63A Gurgaon. 3, 4 and 5 BHK homes from ₹5.91 Cr*, 11.36 acres, 4 towers, 3 clubs, HRERA registered.",
       "isPartOf": {"@id": "https://godrejverano.org/#website"},
       "about": {"@id": "https://godrejverano.org/#project"},
-      "primaryImageOfPage": {"@type": "ImageObject", "url": "https://godrejverano.org/og.png"},
+      "primaryImageOfPage": {"@type": "ImageObject", "url": "https://godrejverano.org/images/hero-1920.webp", "width": 1774, "height": 887},
       "datePublished": "2026-10-29",
       "dateModified": "2026-10-29",
       "inLanguage": "en-IN",
@@ -89,7 +90,15 @@
       "name": "Godrej Verano",
       "alternateName": ["Godrej Verano Sector 63A", "Godrej Sector 63A Gurgaon", "Godrej Verano Gurugram"],
       "url": "https://godrejverano.org/",
-      "image": "https://godrejverano.org/og.png",
+      "image": [
+        "https://godrejverano.org/images/hero-1920.webp",
+        "https://godrejverano.org/images/masterplan-1200.webp",
+        "https://godrejverano.org/images/towers-sky-1600.webp",
+        "https://godrejverano.org/images/club-pool-night-1600.webp",
+        "https://godrejverano.org/images/living-room-1200.webp",
+        "https://godrejverano.org/images/floor-plan-3bhk-1400.webp",
+        "https://godrejverano.org/images/floor-plan-4bhk-1400.webp"
+      ],
       "description": "Godrej Verano is a residential project by Godrej Properties in Sector 63A, Golf Course Extension Road, Gurugram. 11.36 acres, 4 high rise towers, around 624 homes, 3 clubhouses, 3 BHK, 4 BHK and 5 BHK apartments from 2,150 to 3,900 sq ft.",
       "address": {
         "@type": "PostalAddress",
@@ -179,6 +188,7 @@
       <a href="#price">Price</a>
       <a href="#plans">Floor Plans</a>
       <a href="#amenities">Amenities</a>
+      <a href="#gallery">Gallery</a>
       <a href="#location">Location</a>
       <a href="#faq">FAQ</a>
     </nav>
@@ -196,6 +206,7 @@
     <a href="#price">Price List</a>
     <a href="#plans">Floor Plans</a>
     <a href="#amenities">Amenities</a>
+    <a href="#gallery">Gallery</a>
     <a href="#location">Location &amp; Map</a>
     <a href="#payment">Payment Plan</a>
     <a href="#faq">FAQ</a>
@@ -207,7 +218,9 @@
 
 <!-- HERO -->
 <section class="hero" id="hero">
-  <div class="hero__bg" aria-hidden="true">
+  <div class="hero__bg">
+    <img class="hero__img" src="images/hero-1200.webp" srcset="images/hero-768.webp 768w, images/hero-1200.webp 1200w, images/hero-1920.webp 1920w" sizes="100vw" width="1774" height="887" alt="Godrej Verano Sector 63A Gurgaon resort style pool deck with palm trees at sunset, artist's impression" fetchpriority="high" decoding="async">
+    <div class="hero__shade" aria-hidden="true"></div>
     <div class="hero__orb hero__orb--1"></div>
     <div class="hero__orb hero__orb--2"></div>
     <svg class="hero__palms" viewBox="0 0 600 400" preserveAspectRatio="xMaxYMax slice"><g fill="none" stroke="rgba(255,255,255,.08)" stroke-width="2" stroke-linecap="round"><path d="M520 400 C 530 300, 540 240, 600 200"/><path d="M560 400 C 560 320, 600 280, 600 240"/><path d="M490 400 C 480 300, 430 260, 380 250"/><path d="M505 310 c-40 -40 -60 -30 -110 -20"/><path d="M510 290 c-10 -60 10 -90 60 -110"/><path d="M515 300 c30 -50 70 -60 110 -50"/><path d="M500 320 c-50 -10 -90 10 -120 50"/></g></svg>
@@ -291,6 +304,11 @@
         <a href="tel:+919211535553" class="btn btn--ghost">Call 92115 35553</a>
       </div>
     </div>
+    <div>
+      <figure class="fig">
+        <img src="images/masterplan-700.webp" srcset="images/masterplan-700.webp 700w, images/masterplan-1200.webp 1200w" sizes="(max-width: 1024px) 100vw, 45vw" width="1200" height="1200" alt="Godrej Verano master plan aerial view showing four towers, central lagoon pool and landscaped greens on 11.36 acres in Sector 63A Gurgaon" loading="lazy" decoding="async" data-full="images/masterplan-1200.webp">
+        <figcaption>Aerial view of the master plan: four towers around a central lagoon and club zone. Artist's impression.</figcaption>
+      </figure>
     <div class="factbox card">
       <h3>Key facts</h3>
       <dl>
@@ -310,6 +328,7 @@
         <div><dt>Completion</dt><dd>2033 (RERA); phased handover indicated from 2031</dd></div>
         <div><dt>Status</dt><dd>New launch, EOI open</dd></div>
       </dl>
+    </div>
     </div>
   </div>
 </section>
@@ -403,7 +422,7 @@
     <p class="lead">Unit plans are shared by Godrej on request after EOI, so what follows is from the brochure and sample flat. All four homes on a floor are corner units with wraparound balconies.</p>
     <div class="grid-4">
       <article class="plan card">
-        <div class="plan__art" aria-hidden="true"><span>3</span>BHK</div>
+        <img class="plan__img" src="images/floor-plan-3bhk-800.webp" srcset="images/floor-plan-3bhk-800.webp 800w, images/floor-plan-3bhk-1400.webp 1400w" sizes="(max-width: 720px) 100vw, 25vw" width="1400" height="700" alt="Godrej Verano 3 BHK floor plan 3D layout, 2,150 sq ft, Sector 63A Gurgaon" loading="lazy" decoding="async" data-full="images/floor-plan-3bhk-1400.webp">
         <h3>3 BHK</h3>
         <p class="plan__size">2,150 sq ft super area</p>
         <ul>
@@ -416,7 +435,7 @@
         <a href="#enquiry" class="btn btn--outline btn--full">Request 3 BHK plan</a>
       </article>
       <article class="plan card">
-        <div class="plan__art" aria-hidden="true"><span>3</span>BHK+S</div>
+        <img class="plan__img" src="images/floor-plan-3bhk-800.webp" srcset="images/floor-plan-3bhk-800.webp 800w, images/floor-plan-3bhk-1400.webp 1400w" sizes="(max-width: 720px) 100vw, 25vw" width="1400" height="700" alt="Godrej Verano 3 BHK with servant room floor plan, 2,575 sq ft, representative 3D layout" loading="lazy" decoding="async" data-full="images/floor-plan-3bhk-1400.webp">
         <h3>3 BHK + Servant</h3>
         <p class="plan__size">2,575 sq ft super area</p>
         <ul>
@@ -430,7 +449,7 @@
       </article>
       <article class="plan card plan--hot">
         <span class="plan__badge">Most enquired</span>
-        <div class="plan__art" aria-hidden="true"><span>4</span>BHK+S</div>
+        <img class="plan__img" src="images/floor-plan-4bhk-800.webp" srcset="images/floor-plan-4bhk-800.webp 800w, images/floor-plan-4bhk-1400.webp 1400w" sizes="(max-width: 720px) 100vw, 25vw" width="1400" height="700" alt="Godrej Verano 4 BHK with servant room floor plan 3D layout, 2,950 sq ft, Sector 63A Gurgaon" loading="lazy" decoding="async" data-full="images/floor-plan-4bhk-1400.webp">
         <h3>4 BHK + Servant</h3>
         <p class="plan__size">2,950 sq ft super area</p>
         <ul>
@@ -443,7 +462,7 @@
         <a href="#enquiry" class="btn btn--primary btn--full">Request 4 BHK+S plan</a>
       </article>
       <article class="plan card">
-        <div class="plan__art" aria-hidden="true"><span>5</span>BHK+S</div>
+        <img class="plan__img plan__img--iso" src="images/floor-plan-iso-600.webp" width="600" height="782" alt="Godrej Verano 5 BHK with servant room isometric floor plan, 3,900 sq ft, representative layout" loading="lazy" decoding="async" data-full="images/floor-plan-iso-600.webp">
         <h3>5 BHK + Servant</h3>
         <p class="plan__size">3,900 sq ft super area</p>
         <ul>
@@ -456,7 +475,7 @@
         <a href="#enquiry" class="btn btn--outline btn--full">Request 5 BHK+S plan</a>
       </article>
     </div>
-    <p class="fine">Carpet areas as filed with HRERA range from about 110 sq m (1,184 sq ft) for the 3 BHK to about 195 sq m (2,098 sq ft) for the larger 4 and 5 BHK units. Ask us for the carpet to super area ratio of the exact unit before you book.</p>
+    <p class="fine">Floor plan images are 3D renders from the developer's marketing material and are representative. Tap any plan to enlarge. Carpet areas as filed with HRERA range from about 110 sq m (1,184 sq ft) for the 3 BHK to about 195 sq m (2,098 sq ft) for the larger 4 and 5 BHK units. Ask us for the carpet to super area ratio of the exact unit before you book.</p>
   </div>
 </section>
 
@@ -466,6 +485,16 @@
     <p class="kicker">Amenities</p>
     <h2>35 plus amenities across three clubhouses</h2>
     <p class="lead">Godrej has split the club facilities into three buildings so that the sports crowd, families with kids and people who just want a quiet evening do not fight for the same space.</p>
+    <div class="amen-visual">
+      <figure class="fig fig--wide">
+        <img src="images/club-pool-night-900.webp" srcset="images/club-pool-night-900.webp 900w, images/club-pool-night-1600.webp 1600w" sizes="(max-width: 1024px) 100vw, 66vw" width="1600" height="800" alt="Godrej Verano clubhouse and resort style swimming pool lit up at night with palm trees, Sector 63A Gurgaon" loading="lazy" decoding="async" data-full="images/club-pool-night-1600.webp">
+        <figcaption>The leisure club and lagoon pool after dark. Artist's impression.</figcaption>
+      </figure>
+      <figure class="fig">
+        <img src="images/clubhouse-firepit-700.webp" srcset="images/clubhouse-firepit-700.webp 700w, images/clubhouse-firepit-1200.webp 1200w" sizes="(max-width: 1024px) 100vw, 33vw" width="1200" height="1200" alt="Godrej Verano clubhouse sunken fire pit lounge beside the pool deck" loading="lazy" decoding="async" data-full="images/clubhouse-firepit-1200.webp">
+        <figcaption>Sunken fire pit lounge by the pool deck.</figcaption>
+      </figure>
+    </div>
     <div class="amen-grid">
       <div class="amen-col">
         <h3>Sports Club</h3>
@@ -547,12 +576,36 @@
       </dl>
     </div>
     <div class="card quote-card">
+      <img class="quote-card__img" src="images/living-room-700.webp" srcset="images/living-room-700.webp 700w, images/living-room-1200.webp 1200w" sizes="(max-width: 1024px) 100vw, 40vw" width="1200" height="1200" alt="Godrej Verano sample flat living room with floor to ceiling glass and city view, Sector 63A Gurgaon" loading="lazy" decoding="async" data-full="images/living-room-1200.webp">
       <p class="kicker">From the site</p>
       <blockquote>
         <p>“Most buyers I take to Sector 63A are comparing Verano with DLF Privana and the new Sobha launch. What tips it for them is four flats a floor and the three club setup. You simply do not get that density on this road anymore.”</p>
         <footer>Aapt Dubey, property consultant, Gurgaon</footer>
       </blockquote>
       <a href="https://wa.me/919211535553?text=Hi%20Aapt%2C%20I%20want%20to%20visit%20the%20Godrej%20Verano%20sample%20flat." class="btn btn--wa btn--full" target="_blank" rel="noopener">Book a sample flat visit</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section section--tint" id="gallery">
+  <div class="wrap">
+    <p class="kicker">Gallery</p>
+    <h2>Godrej Verano images and renders</h2>
+    <p class="lead">These are the developer's renders of the towers, clubs and pool deck. Tap any image to see it full size. We will send the full brochure with all elevations and plans on request.</p>
+    <div class="gallery">
+      <a class="gallery__item gallery__item--wide" href="images/towers-sky-1600.webp" data-full="images/towers-sky-1600.webp"><img src="images/towers-sky-900.webp" srcset="images/towers-sky-900.webp 900w, images/towers-sky-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 66vw" width="1600" height="736" alt="Godrej Verano twin towers seen from the ground against blue sky, Golf Course Extension Road Gurgaon" loading="lazy" decoding="async"><span>Tower elevation, Sector 63A</span></a>
+      <a class="gallery__item" href="images/tower-palms-1600.webp" data-full="images/tower-palms-1600.webp"><img src="images/tower-palms-900.webp" srcset="images/tower-palms-900.webp 900w, images/tower-palms-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 33vw" width="1600" height="772" alt="Godrej Verano high rise tower framed by palm trees, Miami inspired design" loading="lazy" decoding="async"><span>Tower through the palms</span></a>
+      <a class="gallery__item" href="images/tower-aerial-1600.webp" data-full="images/tower-aerial-1600.webp"><img src="images/tower-aerial-900.webp" srcset="images/tower-aerial-900.webp 900w, images/tower-aerial-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 33vw" width="1600" height="736" alt="Godrej Verano tower at sunset with Aravalli greens in the background" loading="lazy" decoding="async"><span>Aravalli side at sunset</span></a>
+      <a class="gallery__item" href="images/skyline-pool-1600.webp" data-full="images/skyline-pool-1600.webp"><img src="images/skyline-pool-900.webp" srcset="images/skyline-pool-900.webp 900w, images/skyline-pool-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 33vw" width="1600" height="716" alt="Godrej Verano infinity pool overlooking the Gurgaon skyline at dusk" loading="lazy" decoding="async"><span>Infinity edge pool at dusk</span></a>
+      <a class="gallery__item" href="images/living-room-1200.webp" data-full="images/living-room-1200.webp"><img src="images/living-room-700.webp" srcset="images/living-room-700.webp 700w, images/living-room-1200.webp 1200w" sizes="(max-width: 720px) 100vw, 33vw" width="1200" height="1200" alt="Godrej Verano apartment living room interior with large windows" loading="lazy" decoding="async"><span>Living room, sample flat</span></a>
+      <a class="gallery__item" href="images/connectivity-1200.webp" data-full="images/connectivity-1200.webp"><img src="images/connectivity-700.webp" srcset="images/connectivity-700.webp 700w, images/connectivity-1200.webp 1200w" sizes="(max-width: 720px) 100vw, 33vw" width="1200" height="1200" alt="Golf Course Extension Road and Rapid Metro corridor near Godrej Verano Gurgaon" loading="lazy" decoding="async"><span>Golf Course Extn Road corridor</span></a>
+      <a class="gallery__item" href="images/masterplan-1200.webp" data-full="images/masterplan-1200.webp"><img src="images/masterplan-700.webp" srcset="images/masterplan-700.webp 700w, images/masterplan-1200.webp 1200w" sizes="(max-width: 720px) 100vw, 33vw" width="1200" height="1200" alt="Godrej Verano master plan aerial render with four towers and central lagoon" loading="lazy" decoding="async"><span>Master plan aerial</span></a>
+      <a class="gallery__item" href="images/clubhouse-firepit-1200.webp" data-full="images/clubhouse-firepit-1200.webp"><img src="images/clubhouse-firepit-700.webp" srcset="images/clubhouse-firepit-700.webp 700w, images/clubhouse-firepit-1200.webp 1200w" sizes="(max-width: 720px) 100vw, 33vw" width="1200" height="1200" alt="Godrej Verano clubhouse fire pit and pool deck in the evening" loading="lazy" decoding="async"><span>Club deck in the evening</span></a>
+    </div>
+    <p class="fine">All images are artist's impressions supplied by the developer for marketing. Actual construction may vary.</p>
+    <div class="inline-cta inline-cta--center">
+      <a href="#enquiry" class="btn btn--primary btn--lg">Get the full brochure</a>
     </div>
   </div>
 </section>
@@ -845,7 +898,7 @@
       </div>
     </div>
     <div class="footer__disc">
-      <p><strong>Disclaimer:</strong> This website is operated by an independent real estate consultant acting as a channel partner and is not the official website of Godrej Properties Limited. The Godrej name and logo are trademarks of their respective owners and are used here only to identify the project. Prices, sizes, amenities, specifications, plans and timelines are indicative, based on information shared by the developer and public records as of October 2026, and may change without notice. Nothing on this page is an offer or invitation to sell. Please verify all details with the developer and the HRERA portal before making any decision. Images are illustrative.</p>
+      <p><strong>Disclaimer:</strong> This website is operated by an independent real estate consultant acting as a channel partner and is not the official website of Godrej Properties Limited. The Godrej name and logo are trademarks of their respective owners and are used here only to identify the project. Prices, sizes, amenities, specifications, plans and timelines are indicative, based on information shared by the developer and public records as of October 2026, and may change without notice. Nothing on this page is an offer or invitation to sell. Please verify all details with the developer and the HRERA portal before making any decision. Images are artist's impressions from the developer's marketing material and are not to scale.</p>
       <p>&copy; 2026 godrejverano.org. All rights reserved. <a href="privacy.html">Privacy policy</a></p>
     </div>
   </div>
@@ -884,6 +937,12 @@
       <p class="form-msg" role="status" aria-live="polite"></p>
     </form>
   </div>
+</div>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox__close" aria-label="Close image">&times;</button>
+  <img src="" alt="">
+  <p class="lightbox__cap"></p>
 </div>
 
 <script src="script.js" defer></script>

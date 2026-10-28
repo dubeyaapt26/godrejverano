@@ -165,3 +165,26 @@
     });
   }
 })();
+
+/* Lightbox for gallery, plans and figures */
+(function () {
+  var lb = document.getElementById('lightbox');
+  if (!lb) return;
+  var img = lb.querySelector('img');
+  var cap = lb.querySelector('.lightbox__cap');
+  function open(src, alt) {
+    img.src = src; img.alt = alt || ''; cap.textContent = alt || '';
+    lb.hidden = false; document.body.style.overflow = 'hidden';
+  }
+  function close() { lb.hidden = true; img.src = ''; document.body.style.overflow = ''; }
+  document.querySelectorAll('[data-full]').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      var target = el.tagName === 'IMG' ? el : el.querySelector('img');
+      open(el.getAttribute('data-full'), target ? target.alt : '');
+    });
+  });
+  lb.querySelector('.lightbox__close').addEventListener('click', close);
+  lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !lb.hidden) close(); });
+})();
