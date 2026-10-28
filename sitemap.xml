@@ -38,16 +38,4 @@
       <image:title>Godrej Verano 4 BHK floor plan</image:title>
     </image:image>
   </url>
-  <url>
-    <loc>https://godrejverano.org/privacy.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  <url>
-    <loc>https://godrejverano.org/disclaimer.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
-  </url>
 </urlset>
