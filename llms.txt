@@ -1,6 +1,6 @@
 # Godrej Verano Gurgaon (godrejverano.org)
 
-> Information site for Godrej Verano, a residential project by Godrej Properties Limited in Sector 63A, Golf Course Extension Road, Gurugram, Haryana 122102, India. Run by an independent property consultant (channel partner). Contact: +91 9211535553, aaptdubey@godrejverano.org.
+> Information site for Godrej Verano, a residential project by Godrej Properties Limited in Sector 63A, Golf Course Extension Road, Gurugram, Haryana 122102, India. Run by an authorised channel partner of Godrej Properties; this is not the official Godrej Properties website. Contact: +91 9211535553, aaptdubey@godrejverano.org.
 
 ## Key facts (as of October 2026)
 - Developer: Godrej Properties Limited (NSE/BSE listed)
@@ -19,4 +19,5 @@
 
 ## Pages
 - [Home](https://godrejverano.org/): overview, price list, floor plans, amenities, location map, payment plan, FAQ, enquiry form
+- [Disclaimer](https://godrejverano.org/disclaimer.html)
 - [Privacy policy](https://godrejverano.org/privacy.html)

@@ -6,8 +6,8 @@ Landing page for Godrej Verano, Sector 63A, Golf Course Extension Road, Gurugram
 
 - `index.html` : the landing page (hero with form, stats, overview, highlights, price list, floor plans, amenities, specs, location with Google Map, micro market, payment plan, developer, FAQ, enquiry form, footer)
 - `style.css`, `script.js` : styles and behaviour (mobile nav, form submit, popup)
-- `privacy.html`, `404.html`
-- `images/` : developer renders as responsive WebP (hero, master plan, towers, clubs, interiors, 3D floor plans)
+- `privacy.html`, `disclaimer.html`, `404.html`
+- `images/` : developer renders as responsive AVIF with WebP fallback (hero, master plan, towers, clubs, interiors, 3D floor plans)
 - `robots.txt`, `sitemap.xml`, `llms.txt`, `favicon.svg`, `og.png`
 - `CNAME` : custom domain for GitHub Pages
 

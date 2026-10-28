@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<link rel="preload" as="image" href="images/hero-1200.webp" imagesrcset="images/hero-768.webp 768w, images/hero-1200.webp 1200w, images/hero-1920.webp 1920w" imagesizes="100vw">
+<link rel="preload" as="image" type="image/avif" href="images/hero-1200.avif" imagesrcset="images/hero-768.avif 768w, images/hero-1200.avif 1200w, images/hero-1920.avif 1920w" imagesizes="100vw">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
@@ -62,7 +62,7 @@
       "description": "Godrej Verano on Golf Course Extension Road, Sector 63A Gurgaon. 3, 4 and 5 BHK homes from ₹5.91 Cr*, 11.36 acres, 4 towers, 3 clubs, HRERA registered.",
       "isPartOf": {"@id": "https://godrejverano.org/#website"},
       "about": {"@id": "https://godrejverano.org/#project"},
-      "primaryImageOfPage": {"@type": "ImageObject", "url": "https://godrejverano.org/images/hero-1920.webp", "width": 1774, "height": 887},
+      "primaryImageOfPage": {"@type": "ImageObject", "url": "https://godrejverano.org/images/hero-1920.avif", "width": 1774, "height": 887},
       "datePublished": "2026-10-29",
       "dateModified": "2026-10-29",
       "inLanguage": "en-IN",
@@ -71,7 +71,7 @@
     {
       "@type": "RealEstateAgent",
       "@id": "https://godrejverano.org/#agent",
-      "name": "Aapt Dubey, Property Consultant",
+      "name": "Aapt Dubey, Authorised Channel Partner for Godrej Verano",
       "url": "https://godrejverano.org/",
       "telephone": "+91-9211535553",
       "email": "aaptdubey@godrejverano.org",
@@ -91,13 +91,13 @@
       "alternateName": ["Godrej Verano Sector 63A", "Godrej Sector 63A Gurgaon", "Godrej Verano Gurugram"],
       "url": "https://godrejverano.org/",
       "image": [
-        "https://godrejverano.org/images/hero-1920.webp",
-        "https://godrejverano.org/images/masterplan-1200.webp",
-        "https://godrejverano.org/images/towers-sky-1600.webp",
-        "https://godrejverano.org/images/club-pool-night-1600.webp",
-        "https://godrejverano.org/images/living-room-1200.webp",
-        "https://godrejverano.org/images/floor-plan-3bhk-1400.webp",
-        "https://godrejverano.org/images/floor-plan-4bhk-1400.webp"
+        "https://godrejverano.org/images/hero-1920.avif",
+        "https://godrejverano.org/images/masterplan-1200.avif",
+        "https://godrejverano.org/images/towers-sky-1600.avif",
+        "https://godrejverano.org/images/club-pool-night-1600.avif",
+        "https://godrejverano.org/images/living-room-1200.avif",
+        "https://godrejverano.org/images/floor-plan-3bhk-1400.avif",
+        "https://godrejverano.org/images/floor-plan-4bhk-1400.avif"
       ],
       "description": "Godrej Verano is a residential project by Godrej Properties in Sector 63A, Golf Course Extension Road, Gurugram. 11.36 acres, 4 high rise towers, around 624 homes, 3 clubhouses, 3 BHK, 4 BHK and 5 BHK apartments from 2,150 to 3,900 sq ft.",
       "address": {
@@ -219,7 +219,7 @@
 <!-- HERO -->
 <section class="hero" id="hero">
   <div class="hero__bg">
-    <img class="hero__img" src="images/hero-1200.webp" srcset="images/hero-768.webp 768w, images/hero-1200.webp 1200w, images/hero-1920.webp 1920w" sizes="100vw" width="1774" height="887" alt="Godrej Verano Sector 63A Gurgaon resort style pool deck with palm trees at sunset, artist's impression" fetchpriority="high" decoding="async">
+    <picture class="pic hero__img-wrap"><source type="image/avif" srcset="images/hero-768.avif 768w, images/hero-1200.avif 1200w, images/hero-1920.avif 1920w" sizes="100vw"><img class="hero__img" src="images/hero-1200.webp" srcset="images/hero-768.webp 768w, images/hero-1200.webp 1200w, images/hero-1920.webp 1920w" sizes="100vw" width="1774" height="887" alt="Godrej Verano Sector 63A Gurgaon resort style pool deck with palm trees at sunset, artist's impression" fetchpriority="high" decoding="async"></picture>
     <div class="hero__shade" aria-hidden="true"></div>
     <div class="hero__orb hero__orb--1"></div>
     <div class="hero__orb hero__orb--2"></div>
@@ -243,7 +243,7 @@
           WhatsApp Now
         </a>
       </div>
-      <p class="hero__trust">RERA No. RC/REP/HARERA/GGM/1081/813/2026/53 &middot; License 129 of 2025 &middot; No brokerage to buyer</p>
+      <p class="hero__trust"><span class="badge-cp">Authorised Channel Partner</span> RERA No. RC/REP/HARERA/GGM/1081/813/2026/53 &middot; License 129 of 2025 &middot; No brokerage to buyer</p>
     </div>
 
     <aside class="hero__form card" aria-labelledby="form1-title">
@@ -306,7 +306,7 @@
     </div>
     <div>
       <figure class="fig">
-        <img src="images/masterplan-700.webp" srcset="images/masterplan-700.webp 700w, images/masterplan-1200.webp 1200w" sizes="(max-width: 1024px) 100vw, 45vw" width="1200" height="1200" alt="Godrej Verano master plan aerial view showing four towers, central lagoon pool and landscaped greens on 11.36 acres in Sector 63A Gurgaon" loading="lazy" decoding="async" data-full="images/masterplan-1200.webp">
+        <picture class="pic"><source type="image/avif" srcset="images/masterplan-700.avif 700w, images/masterplan-1200.avif 1200w" sizes="(max-width: 1024px) 100vw, 45vw"><img src="images/masterplan-700.webp" srcset="images/masterplan-700.webp 700w, images/masterplan-1200.webp 1200w" sizes="(max-width: 1024px) 100vw, 45vw" width="1200" height="1200" alt="Godrej Verano master plan aerial view showing four towers, central lagoon pool and landscaped greens on 11.36 acres in Sector 63A Gurgaon" loading="lazy" decoding="async" data-full="images/masterplan-1200.avif"></picture>
         <figcaption>Aerial view of the master plan: four towers around a central lagoon and club zone. Artist's impression.</figcaption>
       </figure>
     <div class="factbox card">
@@ -422,7 +422,7 @@
     <p class="lead">Unit plans are shared by Godrej on request after EOI, so what follows is from the brochure and sample flat. All four homes on a floor are corner units with wraparound balconies.</p>
     <div class="grid-4">
       <article class="plan card">
-        <img class="plan__img" src="images/floor-plan-3bhk-800.webp" srcset="images/floor-plan-3bhk-800.webp 800w, images/floor-plan-3bhk-1400.webp 1400w" sizes="(max-width: 720px) 100vw, 25vw" width="1400" height="700" alt="Godrej Verano 3 BHK floor plan 3D layout, 2,150 sq ft, Sector 63A Gurgaon" loading="lazy" decoding="async" data-full="images/floor-plan-3bhk-1400.webp">
+        <picture class="pic plan__img-wrap"><source type="image/avif" srcset="images/floor-plan-3bhk-800.avif 800w, images/floor-plan-3bhk-1400.avif 1400w" sizes="(max-width: 720px) 100vw, 25vw"><img class="plan__img" src="images/floor-plan-3bhk-800.webp" srcset="images/floor-plan-3bhk-800.webp 800w, images/floor-plan-3bhk-1400.webp 1400w" sizes="(max-width: 720px) 100vw, 25vw" width="1400" height="700" alt="Godrej Verano 3 BHK floor plan 3D layout, 2,150 sq ft, Sector 63A Gurgaon" loading="lazy" decoding="async" data-full="images/floor-plan-3bhk-1400.avif"></picture>
         <h3>3 BHK</h3>
         <p class="plan__size">2,150 sq ft super area</p>
         <ul>
@@ -435,7 +435,7 @@
         <a href="#enquiry" class="btn btn--outline btn--full">Request 3 BHK plan</a>
       </article>
       <article class="plan card">
-        <img class="plan__img" src="images/floor-plan-3bhk-800.webp" srcset="images/floor-plan-3bhk-800.webp 800w, images/floor-plan-3bhk-1400.webp 1400w" sizes="(max-width: 720px) 100vw, 25vw" width="1400" height="700" alt="Godrej Verano 3 BHK with servant room floor plan, 2,575 sq ft, representative 3D layout" loading="lazy" decoding="async" data-full="images/floor-plan-3bhk-1400.webp">
+        <picture class="pic plan__img-wrap"><source type="image/avif" srcset="images/floor-plan-3bhk-800.avif 800w, images/floor-plan-3bhk-1400.avif 1400w" sizes="(max-width: 720px) 100vw, 25vw"><img class="plan__img" src="images/floor-plan-3bhk-800.webp" srcset="images/floor-plan-3bhk-800.webp 800w, images/floor-plan-3bhk-1400.webp 1400w" sizes="(max-width: 720px) 100vw, 25vw" width="1400" height="700" alt="Godrej Verano 3 BHK with servant room floor plan, 2,575 sq ft, representative 3D layout" loading="lazy" decoding="async" data-full="images/floor-plan-3bhk-1400.avif"></picture>
         <h3>3 BHK + Servant</h3>
         <p class="plan__size">2,575 sq ft super area</p>
         <ul>
@@ -449,7 +449,7 @@
       </article>
       <article class="plan card plan--hot">
         <span class="plan__badge">Most enquired</span>
-        <img class="plan__img" src="images/floor-plan-4bhk-800.webp" srcset="images/floor-plan-4bhk-800.webp 800w, images/floor-plan-4bhk-1400.webp 1400w" sizes="(max-width: 720px) 100vw, 25vw" width="1400" height="700" alt="Godrej Verano 4 BHK with servant room floor plan 3D layout, 2,950 sq ft, Sector 63A Gurgaon" loading="lazy" decoding="async" data-full="images/floor-plan-4bhk-1400.webp">
+        <picture class="pic plan__img-wrap"><source type="image/avif" srcset="images/floor-plan-4bhk-800.avif 800w, images/floor-plan-4bhk-1400.avif 1400w" sizes="(max-width: 720px) 100vw, 25vw"><img class="plan__img" src="images/floor-plan-4bhk-800.webp" srcset="images/floor-plan-4bhk-800.webp 800w, images/floor-plan-4bhk-1400.webp 1400w" sizes="(max-width: 720px) 100vw, 25vw" width="1400" height="700" alt="Godrej Verano 4 BHK with servant room floor plan 3D layout, 2,950 sq ft, Sector 63A Gurgaon" loading="lazy" decoding="async" data-full="images/floor-plan-4bhk-1400.avif"></picture>
         <h3>4 BHK + Servant</h3>
         <p class="plan__size">2,950 sq ft super area</p>
         <ul>
@@ -462,7 +462,7 @@
         <a href="#enquiry" class="btn btn--primary btn--full">Request 4 BHK+S plan</a>
       </article>
       <article class="plan card">
-        <img class="plan__img plan__img--iso" src="images/floor-plan-iso-600.webp" width="600" height="782" alt="Godrej Verano 5 BHK with servant room isometric floor plan, 3,900 sq ft, representative layout" loading="lazy" decoding="async" data-full="images/floor-plan-iso-600.webp">
+        <picture class="pic plan__img-wrap"><source type="image/avif" srcset="images/floor-plan-iso-600.avif"><img class="plan__img plan__img--iso" src="images/floor-plan-iso-600.webp" width="600" height="782" alt="Godrej Verano 5 BHK with servant room isometric floor plan, 3,900 sq ft, representative layout" loading="lazy" decoding="async" data-full="images/floor-plan-iso-600.avif"></picture>
         <h3>5 BHK + Servant</h3>
         <p class="plan__size">3,900 sq ft super area</p>
         <ul>
@@ -487,11 +487,11 @@
     <p class="lead">Godrej has split the club facilities into three buildings so that the sports crowd, families with kids and people who just want a quiet evening do not fight for the same space.</p>
     <div class="amen-visual">
       <figure class="fig fig--wide">
-        <img src="images/club-pool-night-900.webp" srcset="images/club-pool-night-900.webp 900w, images/club-pool-night-1600.webp 1600w" sizes="(max-width: 1024px) 100vw, 66vw" width="1600" height="800" alt="Godrej Verano clubhouse and resort style swimming pool lit up at night with palm trees, Sector 63A Gurgaon" loading="lazy" decoding="async" data-full="images/club-pool-night-1600.webp">
+        <picture class="pic"><source type="image/avif" srcset="images/club-pool-night-900.avif 900w, images/club-pool-night-1600.avif 1600w" sizes="(max-width: 1024px) 100vw, 66vw"><img src="images/club-pool-night-900.webp" srcset="images/club-pool-night-900.webp 900w, images/club-pool-night-1600.webp 1600w" sizes="(max-width: 1024px) 100vw, 66vw" width="1600" height="800" alt="Godrej Verano clubhouse and resort style swimming pool lit up at night with palm trees, Sector 63A Gurgaon" loading="lazy" decoding="async" data-full="images/club-pool-night-1600.avif"></picture>
         <figcaption>The leisure club and lagoon pool after dark. Artist's impression.</figcaption>
       </figure>
       <figure class="fig">
-        <img src="images/clubhouse-firepit-700.webp" srcset="images/clubhouse-firepit-700.webp 700w, images/clubhouse-firepit-1200.webp 1200w" sizes="(max-width: 1024px) 100vw, 33vw" width="1200" height="1200" alt="Godrej Verano clubhouse sunken fire pit lounge beside the pool deck" loading="lazy" decoding="async" data-full="images/clubhouse-firepit-1200.webp">
+        <picture class="pic"><source type="image/avif" srcset="images/clubhouse-firepit-700.avif 700w, images/clubhouse-firepit-1200.avif 1200w" sizes="(max-width: 1024px) 100vw, 33vw"><img src="images/clubhouse-firepit-700.webp" srcset="images/clubhouse-firepit-700.webp 700w, images/clubhouse-firepit-1200.webp 1200w" sizes="(max-width: 1024px) 100vw, 33vw" width="1200" height="1200" alt="Godrej Verano clubhouse sunken fire pit lounge beside the pool deck" loading="lazy" decoding="async" data-full="images/clubhouse-firepit-1200.avif"></picture>
         <figcaption>Sunken fire pit lounge by the pool deck.</figcaption>
       </figure>
     </div>
@@ -534,23 +534,62 @@
       </div>
     </div>
     <div class="amen-extra">
-      <h3>Across the community</h3>
-      <ul class="pill-list">
-        <li>Three tier security with CCTV</li>
-        <li>Video door phones</li>
-        <li>4 level basement parking</li>
-        <li>100 percent power backup</li>
-        <li>EV charging points</li>
-        <li>Rainwater harvesting</li>
-        <li>Sewage treatment plant</li>
-        <li>Pet friendly, with pet park</li>
-        <li>Convenience retail on site</li>
-        <li>Landscaped water bodies</li>
-        <li>Themed gardens and courtyards</li>
-        <li>Wi Fi in common areas</li>
+      <div class="amen-extra__head">
+        <h3>Across the community</h3>
+        <p>The things you only notice when they are missing. All of these are part of the base plan, not paid add ons.</p>
+      </div>
+      <ul class="tiles">
+        <li class="tile">
+          <span class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <div><h4>Three tier security</h4><p>Gated entry, tower lobby and floor level access control with CCTV throughout</p></div>
+        </li>
+        <li class="tile">
+          <span class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3z"/></svg></span>
+          <div><h4>Video door phones</h4><p>Every apartment sees and speaks to visitors before the lobby lets them up</p></div>
+        </li>
+        <li class="tile">
+          <span class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17h14M6 17l1.5-5h9L18 17M3 17v2h3v-2M18 17v2h3v-2"/><circle cx="7.5" cy="14.5" r="1"/><circle cx="16.5" cy="14.5" r="1"/></svg></span>
+          <div><h4>4 level basement parking</h4><p>Two covered slots bundled with most units, visitor parking kept separate</p></div>
+        </li>
+        <li class="tile">
+          <span class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></span>
+          <div><h4>100 percent power backup</h4><p>Full DG backup for apartments and all common areas, not just lifts</p></div>
+        </li>
+        <li class="tile">
+          <span class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2v6M15 2v6M7 8h10v3a5 5 0 0 1-10 0zM12 16v6"/></svg></span>
+          <div><h4>EV charging points</h4><p>Charging bays in the basement, with provision to add more as demand grows</p></div>
+        </li>
+        <li class="tile">
+          <span class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg></span>
+          <div><h4>Rainwater harvesting</h4><p>Recharge pits across the 11 acres to keep the water table and bills in check</p></div>
+        </li>
+        <li class="tile">
+          <span class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 19l-3-5 3-5M17 19l3-5-3-5M4 14h8M12 9h8M9 4l3 5 3-5"/></svg></span>
+          <div><h4>Sewage treatment plant</h4><p>Treated water reused for landscaping and flushing across the community</p></div>
+        </li>
+        <li class="tile">
+          <span class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="9" r="2"/><circle cx="17" cy="9" r="2"/><circle cx="10" cy="5" r="2"/><circle cx="14" cy="5" r="2"/><path d="M12 11c-3 0-6 3-6 6 0 2 2 3 3 3 1 0 2-1 3-1s2 1 3 1c1 0 3-1 3-3 0-3-3-6-6-6z"/></svg></span>
+          <div><h4>Pet friendly, with pet park</h4><p>A dedicated pet park so the walking loops stay clean for everyone</p></div>
+        </li>
+        <li class="tile">
+          <span class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l1.5-5h15L21 9M3 9v11h18V9M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0M9 20v-6h6v6"/></svg></span>
+          <div><h4>Convenience retail on site</h4><p>Daily needs store, pharmacy and cafe in the commercial block at the gate</p></div>
+        </li>
+        <li class="tile">
+          <span class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0M2 17c2-2 4-2 6 0s4 2 6 0 4-2 6 0M2 7c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/></svg></span>
+          <div><h4>Landscaped water bodies</h4><p>Lagoon pool, reflecting pools and streams running through the greens</p></div>
+        </li>
+        <li class="tile">
+          <span class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l5 7h-3l4 6h-5v7h-2v-7H6l4-6H7z"/></svg></span>
+          <div><h4>Themed gardens and courtyards</h4><p>Palm courts, sensory garden, senior citizens corner and open lawns</p></div>
+        </li>
+        <li class="tile">
+          <span class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a16 16 0 0 1 20 0M5.5 12.5a11 11 0 0 1 13 0M9 16a6 6 0 0 1 6 0"/><circle cx="12" cy="19.5" r="1"/></svg></span>
+          <div><h4>Wi Fi in common areas</h4><p>Connected clubs, lobbies and work lounges so you can work from the deck</p></div>
+        </li>
       </ul>
     </div>
-    <p class="fine">Final amenity list is subject to the approved building plans and the developer's brochure.</p>
+    <p class="fine">Final amenity list is subject to the approved building plans and the developer's brochure. Specifications are indicative and the agreement for sale is the binding document.</p>
   </div>
 </section>
 
@@ -563,20 +602,56 @@
       <div class="prose">
         <p>Godrej's Gurgaon projects at this price point have been fairly consistent on finish. Here is what the sample flat and the specification sheet show.</p>
       </div>
-      <dl class="spec-list">
-        <div><dt>Structure</dt><dd>Earthquake resistant RCC frame, Mivan shuttering</dd></div>
-        <div><dt>Living, dining, bedrooms</dt><dd>Large format imported marble or premium vitrified tiles</dd></div>
-        <div><dt>Kitchen</dt><dd>Modular kitchen with granite or quartz counter, hob and chimney, anti skid flooring</dd></div>
-        <div><dt>Bathrooms</dt><dd>Premium sanitary ware and CP fittings (Kohler, Grohe or equivalent), glass shower partition in master</dd></div>
-        <div><dt>Doors and windows</dt><dd>Laminated flush doors, UPVC or aluminium windows with double glazing on select facades</dd></div>
-        <div><dt>Air conditioning</dt><dd>VRV or split AC provision in all rooms</dd></div>
-        <div><dt>Electrical</dt><dd>Modular switches, copper wiring, provision for home automation</dd></div>
-        <div><dt>Balconies</dt><dd>Anti skid tiles, MS or glass railing</dd></div>
-        <div><dt>Lifts</dt><dd>High speed lifts with separate service lift per tower</dd></div>
-      </dl>
+      <div class="spec-grid">
+        <div class="spec">
+          <span class="spec__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 6h2M13 6h2M9 10h2M13 10h2M9 14h2M13 14h2M10 22v-4h4v4"/></svg></span>
+          <h3>Structure</h3>
+          <p>Earthquake resistant RCC frame, Mivan shuttering</p>
+        </div>
+        <div class="spec">
+          <span class="spec__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-5 9 5-9 5z"/><path d="M3 9v6l9 5 9-5V9M12 14v6"/></svg></span>
+          <h3>Living, dining, bedrooms</h3>
+          <p>Large format imported marble or premium vitrified tiles</p>
+        </div>
+        <div class="spec">
+          <span class="spec__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h16v10H4zM4 14h16M8 10V7a4 4 0 0 1 8 0v3"/><path d="M8 17h.01M12 17h.01M16 17h.01"/></svg></span>
+          <h3>Kitchen</h3>
+          <p>Modular kitchen with granite or quartz counter, hob and chimney, anti skid flooring</p>
+        </div>
+        <div class="spec">
+          <span class="spec__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16v3a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM6 12V5a2 2 0 0 1 4 0M8 5h3M6 20l-1 2M18 20l1 2"/></svg></span>
+          <h3>Bathrooms</h3>
+          <p>Premium sanitary ware and CP fittings (Kohler, Grohe or equivalent), glass shower partition in master</p>
+        </div>
+        <div class="spec">
+          <span class="spec__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="1"/><path d="M9 2v20M9 7l10-3v16L9 17"/><circle cx="12" cy="12" r=".8"/></svg></span>
+          <h3>Doors and windows</h3>
+          <p>Laminated flush doors, UPVC or aluminium windows with double glazing on select facades</p>
+        </div>
+        <div class="spec">
+          <span class="spec__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg></span>
+          <h3>Air conditioning</h3>
+          <p>VRV or split AC provision in all rooms</p>
+        </div>
+        <div class="spec">
+          <span class="spec__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></span>
+          <h3>Electrical</h3>
+          <p>Modular switches, copper wiring, provision for home automation</p>
+        </div>
+        <div class="spec">
+          <span class="spec__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18M3 20h18M5 10v10M9 10v10M13 10v10M17 10v10M21 10v10M3 10l9-6 9 6"/></svg></span>
+          <h3>Balconies</h3>
+          <p>Anti skid tiles, MS or glass railing</p>
+        </div>
+        <div class="spec">
+          <span class="spec__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M12 2v20M8 10l-1.5 2L8 14M16 10l1.5 2L16 14"/></svg></span>
+          <h3>Lifts</h3>
+          <p>High speed lifts with separate service lift per tower</p>
+        </div>
+      </div>
     </div>
     <div class="card quote-card">
-      <img class="quote-card__img" src="images/living-room-700.webp" srcset="images/living-room-700.webp 700w, images/living-room-1200.webp 1200w" sizes="(max-width: 1024px) 100vw, 40vw" width="1200" height="1200" alt="Godrej Verano sample flat living room with floor to ceiling glass and city view, Sector 63A Gurgaon" loading="lazy" decoding="async" data-full="images/living-room-1200.webp">
+      <picture class="pic quote-card__img-wrap"><source type="image/avif" srcset="images/living-room-700.avif 700w, images/living-room-1200.avif 1200w" sizes="(max-width: 1024px) 100vw, 40vw"><img class="quote-card__img" src="images/living-room-700.webp" srcset="images/living-room-700.webp 700w, images/living-room-1200.webp 1200w" sizes="(max-width: 1024px) 100vw, 40vw" width="1200" height="1200" alt="Godrej Verano sample flat living room with floor to ceiling glass and city view, Sector 63A Gurgaon" loading="lazy" decoding="async" data-full="images/living-room-1200.avif"></picture>
       <p class="kicker">From the site</p>
       <blockquote>
         <p>“Most buyers I take to Sector 63A are comparing Verano with DLF Privana and the new Sobha launch. What tips it for them is four flats a floor and the three club setup. You simply do not get that density on this road anymore.”</p>
@@ -594,14 +669,14 @@
     <h2>Godrej Verano images and renders</h2>
     <p class="lead">These are the developer's renders of the towers, clubs and pool deck. Tap any image to see it full size. We will send the full brochure with all elevations and plans on request.</p>
     <div class="gallery">
-      <a class="gallery__item gallery__item--wide" href="images/towers-sky-1600.webp" data-full="images/towers-sky-1600.webp"><img src="images/towers-sky-900.webp" srcset="images/towers-sky-900.webp 900w, images/towers-sky-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 66vw" width="1600" height="736" alt="Godrej Verano twin towers seen from the ground against blue sky, Golf Course Extension Road Gurgaon" loading="lazy" decoding="async"><span>Tower elevation, Sector 63A</span></a>
-      <a class="gallery__item" href="images/tower-palms-1600.webp" data-full="images/tower-palms-1600.webp"><img src="images/tower-palms-900.webp" srcset="images/tower-palms-900.webp 900w, images/tower-palms-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 33vw" width="1600" height="772" alt="Godrej Verano high rise tower framed by palm trees, Miami inspired design" loading="lazy" decoding="async"><span>Tower through the palms</span></a>
-      <a class="gallery__item" href="images/tower-aerial-1600.webp" data-full="images/tower-aerial-1600.webp"><img src="images/tower-aerial-900.webp" srcset="images/tower-aerial-900.webp 900w, images/tower-aerial-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 33vw" width="1600" height="736" alt="Godrej Verano tower at sunset with Aravalli greens in the background" loading="lazy" decoding="async"><span>Aravalli side at sunset</span></a>
-      <a class="gallery__item" href="images/skyline-pool-1600.webp" data-full="images/skyline-pool-1600.webp"><img src="images/skyline-pool-900.webp" srcset="images/skyline-pool-900.webp 900w, images/skyline-pool-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 33vw" width="1600" height="716" alt="Godrej Verano infinity pool overlooking the Gurgaon skyline at dusk" loading="lazy" decoding="async"><span>Infinity edge pool at dusk</span></a>
-      <a class="gallery__item" href="images/living-room-1200.webp" data-full="images/living-room-1200.webp"><img src="images/living-room-700.webp" srcset="images/living-room-700.webp 700w, images/living-room-1200.webp 1200w" sizes="(max-width: 720px) 100vw, 33vw" width="1200" height="1200" alt="Godrej Verano apartment living room interior with large windows" loading="lazy" decoding="async"><span>Living room, sample flat</span></a>
-      <a class="gallery__item" href="images/connectivity-1200.webp" data-full="images/connectivity-1200.webp"><img src="images/connectivity-700.webp" srcset="images/connectivity-700.webp 700w, images/connectivity-1200.webp 1200w" sizes="(max-width: 720px) 100vw, 33vw" width="1200" height="1200" alt="Golf Course Extension Road and Rapid Metro corridor near Godrej Verano Gurgaon" loading="lazy" decoding="async"><span>Golf Course Extn Road corridor</span></a>
-      <a class="gallery__item" href="images/masterplan-1200.webp" data-full="images/masterplan-1200.webp"><img src="images/masterplan-700.webp" srcset="images/masterplan-700.webp 700w, images/masterplan-1200.webp 1200w" sizes="(max-width: 720px) 100vw, 33vw" width="1200" height="1200" alt="Godrej Verano master plan aerial render with four towers and central lagoon" loading="lazy" decoding="async"><span>Master plan aerial</span></a>
-      <a class="gallery__item" href="images/clubhouse-firepit-1200.webp" data-full="images/clubhouse-firepit-1200.webp"><img src="images/clubhouse-firepit-700.webp" srcset="images/clubhouse-firepit-700.webp 700w, images/clubhouse-firepit-1200.webp 1200w" sizes="(max-width: 720px) 100vw, 33vw" width="1200" height="1200" alt="Godrej Verano clubhouse fire pit and pool deck in the evening" loading="lazy" decoding="async"><span>Club deck in the evening</span></a>
+      <a class="gallery__item gallery__item--wide" href="images/towers-sky-1600.avif" data-full="images/towers-sky-1600.avif"><picture class="pic"><source type="image/avif" srcset="images/towers-sky-900.avif 900w, images/towers-sky-1600.avif 1600w" sizes="(max-width: 720px) 100vw, 66vw"><img src="images/towers-sky-900.webp" srcset="images/towers-sky-900.webp 900w, images/towers-sky-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 66vw" width="1600" height="736" alt="Godrej Verano twin towers seen from the ground against blue sky, Golf Course Extension Road Gurgaon" loading="lazy" decoding="async"></picture><span>Tower elevation, Sector 63A</span></a>
+      <a class="gallery__item" href="images/tower-palms-1600.avif" data-full="images/tower-palms-1600.avif"><picture class="pic"><source type="image/avif" srcset="images/tower-palms-900.avif 900w, images/tower-palms-1600.avif 1600w" sizes="(max-width: 720px) 100vw, 33vw"><img src="images/tower-palms-900.webp" srcset="images/tower-palms-900.webp 900w, images/tower-palms-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 33vw" width="1600" height="772" alt="Godrej Verano high rise tower framed by palm trees, Miami inspired design" loading="lazy" decoding="async"></picture><span>Tower through the palms</span></a>
+      <a class="gallery__item" href="images/tower-aerial-1600.avif" data-full="images/tower-aerial-1600.avif"><picture class="pic"><source type="image/avif" srcset="images/tower-aerial-900.avif 900w, images/tower-aerial-1600.avif 1600w" sizes="(max-width: 720px) 100vw, 33vw"><img src="images/tower-aerial-900.webp" srcset="images/tower-aerial-900.webp 900w, images/tower-aerial-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 33vw" width="1600" height="736" alt="Godrej Verano tower at sunset with Aravalli greens in the background" loading="lazy" decoding="async"></picture><span>Aravalli side at sunset</span></a>
+      <a class="gallery__item" href="images/skyline-pool-1600.avif" data-full="images/skyline-pool-1600.avif"><picture class="pic"><source type="image/avif" srcset="images/skyline-pool-900.avif 900w, images/skyline-pool-1600.avif 1600w" sizes="(max-width: 720px) 100vw, 33vw"><img src="images/skyline-pool-900.webp" srcset="images/skyline-pool-900.webp 900w, images/skyline-pool-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 33vw" width="1600" height="716" alt="Godrej Verano infinity pool overlooking the Gurgaon skyline at dusk" loading="lazy" decoding="async"></picture><span>Infinity edge pool at dusk</span></a>
+      <a class="gallery__item" href="images/living-room-1200.avif" data-full="images/living-room-1200.avif"><picture class="pic"><source type="image/avif" srcset="images/living-room-700.avif 700w, images/living-room-1200.avif 1200w" sizes="(max-width: 720px) 100vw, 33vw"><img src="images/living-room-700.webp" srcset="images/living-room-700.webp 700w, images/living-room-1200.webp 1200w" sizes="(max-width: 720px) 100vw, 33vw" width="1200" height="1200" alt="Godrej Verano apartment living room interior with large windows" loading="lazy" decoding="async"></picture><span>Living room, sample flat</span></a>
+      <a class="gallery__item" href="images/connectivity-1200.avif" data-full="images/connectivity-1200.avif"><picture class="pic"><source type="image/avif" srcset="images/connectivity-700.avif 700w, images/connectivity-1200.avif 1200w" sizes="(max-width: 720px) 100vw, 33vw"><img src="images/connectivity-700.webp" srcset="images/connectivity-700.webp 700w, images/connectivity-1200.webp 1200w" sizes="(max-width: 720px) 100vw, 33vw" width="1200" height="1200" alt="Golf Course Extension Road and Rapid Metro corridor near Godrej Verano Gurgaon" loading="lazy" decoding="async"></picture><span>Golf Course Extn Road corridor</span></a>
+      <a class="gallery__item" href="images/masterplan-1200.avif" data-full="images/masterplan-1200.avif"><picture class="pic"><source type="image/avif" srcset="images/masterplan-700.avif 700w, images/masterplan-1200.avif 1200w" sizes="(max-width: 720px) 100vw, 33vw"><img src="images/masterplan-700.webp" srcset="images/masterplan-700.webp 700w, images/masterplan-1200.webp 1200w" sizes="(max-width: 720px) 100vw, 33vw" width="1200" height="1200" alt="Godrej Verano master plan aerial render with four towers and central lagoon" loading="lazy" decoding="async"></picture><span>Master plan aerial</span></a>
+      <a class="gallery__item" href="images/clubhouse-firepit-1200.avif" data-full="images/clubhouse-firepit-1200.avif"><picture class="pic"><source type="image/avif" srcset="images/clubhouse-firepit-700.avif 700w, images/clubhouse-firepit-1200.avif 1200w" sizes="(max-width: 720px) 100vw, 33vw"><img src="images/clubhouse-firepit-700.webp" srcset="images/clubhouse-firepit-700.webp 700w, images/clubhouse-firepit-1200.webp 1200w" sizes="(max-width: 720px) 100vw, 33vw" width="1200" height="1200" alt="Godrej Verano clubhouse fire pit and pool deck in the evening" loading="lazy" decoding="async"></picture><span>Club deck in the evening</span></a>
     </div>
     <p class="fine">All images are artist's impressions supplied by the developer for marketing. Actual construction may vary.</p>
     <div class="inline-cta inline-cta--center">
@@ -808,7 +883,7 @@
       </details>
       <details>
         <summary>Is this the official Godrej Properties website?</summary>
-        <div><p>No. godrejverano.org is run by an independent property consultant who sells Godrej Verano as a channel partner. All bookings, payments and agreements are directly with Godrej Properties Limited. We help you with information, site visits, unit selection and paperwork at no cost to you.</p></div>
+        <div><p>No. godrejverano.org is run by an authorised channel partner of Godrej Properties, not by Godrej itself. The official site is godrejproperties.com. All bookings, payments and agreements are made directly with Godrej Properties Limited in your name. We help you with information, site visits, unit selection and paperwork at no cost to you, and the price you pay is the same as walking into the Godrej sales office. See our <a href="disclaimer.html">disclaimer</a> for the full position.</p></div>
       </details>
     </div>
   </div>
@@ -877,6 +952,7 @@
     <div class="footer__grid">
       <div>
         <p class="brand__text"><strong>Godrej Verano Gurgaon</strong></p>
+        <p class="footer__cp">Authorised Channel Partner of Godrej Properties</p>
         <p>Sector 63A, Golf Course Extension Road, Gurugram, Haryana 122102</p>
         <p><a href="tel:+919211535553">+91 92115 35553</a><br><a href="mailto:aaptdubey@godrejverano.org">aaptdubey@godrejverano.org</a></p>
       </div>
@@ -894,12 +970,17 @@
       </div>
       <div>
         <p><strong>Regulatory</strong></p>
-        <p>HRERA Registration No. RC/REP/HARERA/GGM/1081/813/2026/53 dated 11.08.2026<br>License No. 129 of 2025 dated 23.07.2025<br>Verify at <a href="https://haryanarera.gov.in" target="_blank" rel="noopener nofollow">haryanarera.gov.in</a></p>
+        <p>Project HRERA Registration No. RC/REP/HARERA/GGM/1081/813/2026/53 dated 11.08.2026<br>License No. 129 of 2025 dated 23.07.2025<br>Verify at <a href="https://haryanarera.gov.in" target="_blank" rel="noopener nofollow">haryanarera.gov.in</a></p>
+        <ul>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="https://www.godrejproperties.com/" target="_blank" rel="noopener nofollow">Official Godrej Properties website</a></li>
+        </ul>
       </div>
     </div>
     <div class="footer__disc">
-      <p><strong>Disclaimer:</strong> This website is operated by an independent real estate consultant acting as a channel partner and is not the official website of Godrej Properties Limited. The Godrej name and logo are trademarks of their respective owners and are used here only to identify the project. Prices, sizes, amenities, specifications, plans and timelines are indicative, based on information shared by the developer and public records as of October 2026, and may change without notice. Nothing on this page is an offer or invitation to sell. Please verify all details with the developer and the HRERA portal before making any decision. Images are artist's impressions from the developer's marketing material and are not to scale.</p>
-      <p>&copy; 2026 godrejverano.org. All rights reserved. <a href="privacy.html">Privacy policy</a></p>
+      <p><strong>Disclaimer:</strong> godrejverano.org is operated by an authorised channel partner of Godrej Properties Limited. This is not the official website of Godrej Properties and we are not the developer. The Godrej name, logo and project renders belong to Godrej Properties Limited and are used only to describe the project. Prices, sizes, amenities, specifications, plans and timelines are indicative, based on information shared by the developer and public records as of October 2026, and may change without notice. Nothing on this page is an offer, invitation or legal commitment. All bookings and payments are made directly to Godrej Properties Limited. Please verify every detail with the developer and the HRERA portal before deciding. Images are artist's impressions and not to scale. Read the full <a href="disclaimer.html">disclaimer</a>.</p>
+      <p>&copy; 2026 godrejverano.org. All rights reserved. <a href="disclaimer.html">Disclaimer</a> &middot; <a href="privacy.html">Privacy policy</a></p>
     </div>
   </div>
 </footer>
