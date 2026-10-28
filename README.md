@@ -9,7 +9,7 @@ Landing page for Godrej Verano, Sector 63A, Golf Course Extension Road, Gurugram
 - `privacy.html`, `disclaimer.html`, `404.html`
 - `images/` : developer renders as responsive AVIF with WebP fallback (hero, master plan, towers, clubs, interiors, 3D floor plans)
 - `robots.txt`, `sitemap.xml`, `llms.txt`, `favicon.svg`, `og.png`
-- `CNAME` : custom domain for GitHub Pages
+- `vercel.json` : redirects, cache and security headers
 
 ## Enquiry form
 
@@ -17,19 +17,9 @@ Forms post to FormSubmit (`https://formsubmit.co/ajax/aaptdubey@godrejverano.org
 
 The mailbox `aaptdubey@godrejverano.org` must exist (MX records on the domain) for this to work.
 
-## DNS for GitHub Pages
+## DNS
 
-At the registrar for godrejverano.org:
-
-```
-A     @     185.199.108.153
-A     @     185.199.109.153
-A     @     185.199.110.153
-A     @     185.199.111.153
-CNAME www   dubeyaapt26.github.io
-```
-
-Then in the repo Settings > Pages, confirm the custom domain and tick Enforce HTTPS once the certificate is issued.
+godrejverano.org is on Cloudflare nameservers. The A records for the apex and the CNAME for www point at Vercel, as set in the Vercel project's Domains tab. Email for aaptdubey@godrejverano.org needs MX records on the same zone.
 
 ## Updating prices
 
