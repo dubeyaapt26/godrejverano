@@ -147,10 +147,6 @@ ul{margin:0;padding-left:1.2em}
 .price-table tbody tr:hover{background:#fbfaf7}
 .link-cta{font-weight:700;color:var(--green-2);text-decoration:none;white-space:nowrap}
 .link-cta::after{content:" ›"}
-.note-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:26px}
-.note{background:var(--sand);border-radius:var(--radius);padding:24px}
-.note ul{font-size:.93rem;color:var(--ink)}
-.note li{margin-bottom:6px}
 
 /* Plans */
 .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:28px}
@@ -273,7 +269,7 @@ ul{margin:0;padding-left:1.2em}
   .hero__actions .btn{width:100%}
   .topbar__cta{display:none}
   .burger{display:flex}
-  .grid-3,.grid-4,.steps,.amen-grid,.note-grid{grid-template-columns:1fr}
+  .grid-3,.grid-4,.steps,.amen-grid{grid-template-columns:1fr}
   .stats__grid{grid-template-columns:1fr 1fr}
   .stats__grid div{border-right:0;border-bottom:1px solid var(--line)}
   .stats__grid div:nth-child(odd){border-right:1px solid var(--line)}
