@@ -1,0 +1,9 @@
+{
+  "name": "godrejverano",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Godrej Verano landing page with an enquiry email route",
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  }
+}

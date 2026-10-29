@@ -13,9 +13,18 @@ Landing page for Godrej Verano, Sector 63A, Golf Course Extension Road, Gurugram
 
 ## Enquiry form
 
-Forms post to FormSubmit (`https://formsubmit.co/ajax/aaptdubey@godrejverano.org`). The first submission triggers an activation email to that address; click the link once and all later submissions land in the inbox. On any failure the visitor is offered a WhatsApp fallback to +91 92115 35553 with the same details prefilled.
+Every form posts to `/api/enquiry`, a Vercel serverless function in `api/enquiry.js` that emails the enquiry to aaptdubey@godrejverano.org through the domain's own GoDaddy mailbox (SMTP). If that route is not configured or fails, the browser falls back to FormSubmit (`https://formsubmit.co/ajax/aaptdubey@godrejverano.org`), and if that also fails the visitor gets a WhatsApp button with the same details prefilled.
 
-The mailbox `aaptdubey@godrejverano.org` must exist (MX records on the domain) for this to work.
+Set these in the Vercel project (Settings > Environment Variables, all environments), then redeploy:
+
+| Variable | Value |
+|---|---|
+| `SMTP_USER` | aaptdubey@godrejverano.org |
+| `SMTP_PASS` | the mailbox password |
+| `SMTP_HOST` | optional, default smtpout.secureserver.net |
+| `SMTP_PORT` | optional, default 465 |
+
+FormSubmit, if ever used as the fallback, sends a one time activation email to the address on the first submission.
 
 ## DNS
 

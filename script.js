@@ -3,6 +3,7 @@
   'use strict';
 
   var PHONE = '919211535553';
+  var MAIL_ROUTE = '/api/enquiry';
   var FORM_ENDPOINT = 'https://formsubmit.co/ajax/aaptdubey@godrejverano.org';
 
   /* Mobile nav */
@@ -105,13 +106,24 @@
       }
     }
 
-    fetch(FORM_ENDPOINT, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify(data)
-    }).then(function (r) { return r.ok ? r.json() : Promise.reject(r); })
+    function postJSON(url) {
+      return fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+      }).then(function (r) {
+        if (r.ok) return r.json();
+        return Promise.reject(r.status);
+      });
+    }
+    /* 1. site mail route (Vercel, sends via the godrejverano.org mailbox); 2. FormSubmit as fallback; 3. WhatsApp */
+    postJSON(MAIL_ROUTE)
       .then(function () { done(true); })
-      .catch(function () { done(false); });
+      .catch(function () {
+        postJSON(FORM_ENDPOINT)
+          .then(function () { done(true); })
+          .catch(function () { done(false); });
+      });
   }
 
   document.querySelectorAll('.lead-form').forEach(function (f) {
