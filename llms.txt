@@ -1,23 +1,35 @@
 # Godrej Verano Gurgaon (godrejverano.org)
 
-> Information site for Godrej Verano, a residential project by Godrej Properties Limited in Sector 63A, Golf Course Extension Road, Gurugram, Haryana 122102, India. Run by an authorised channel partner of Godrej Properties; this is not the official Godrej Properties website. Contact: +91 9211535553, aaptdubey@godrejverano.org.
+> Information site for Godrej Verano, a residential project by Godrej Properties Limited in Sector 63A, Golf Course Extension Road, Gurugram, Haryana 122102, India. Run by an authorised channel partner of Godrej Properties; this is not the official Godrej Properties website. Contact: +91 9211535553, aaptdubey@godrejverano.org. Last updated 29 October 2026.
 
 ## Key facts (as of October 2026)
 - Developer: Godrej Properties Limited (NSE/BSE listed)
-- Location: Sector 63A, off Golf Course Extension Road, Gurugram
-- Land: 11.36 acres (Phase 1 RERA registered area 9.65 acres)
-- Towers: 4 residential towers, G+39 and G+40, 4 apartments per floor
-- Homes: approx. 624
-- Clubhouses: 3 (about 2 lakh sq ft total club area), 80 percent plus open area
+- Location: Sector 63A, Village Ullawas, off Golf Course Extension Road, Gurugram
+- Land: 11.36 acres bought outright in March 2026; Phase 1 registered with HRERA on 9.65 acres
+- Towers: 4 residential towers, G+39 (Towers 1 and 4) and G+40 (Towers 2 and 3), 4 apartments per floor
+- Homes: 624 residential units plus 6 shops
+- Clubhouses: 3 (about 2 lakh sq ft total club area), more than 80 percent of the plot open
 - Configurations: 3 BHK (2,150 sq ft), 3 BHK + servant (2,575 sq ft), 4 BHK + servant (2,950 sq ft), 5 BHK + servant (3,900 sq ft), penthouses 4,500 to 6,500 sq ft. Super built up area.
 - Indicative price: Rs 5.91 Cr to Rs 10.72 Cr, approx. Rs 27,490 per sq ft, excluding PLC, parking, club charges, GST
-- Payment plan: 20:5 construction linked; EOI Rs 10 lakh
-- HRERA registration: RC/REP/HARERA/GGM/1081/813/2026/53 dated 11 August 2026
-- License: 129 of 2025 dated 23 July 2025
-- RERA completion date: 2033; developer indicates phased handover from 2031
+- Payment plan: 20:5 construction linked; EOI Rs 10 lakh, adjusted in booking
+- HRERA registration: RC/REP/HARERA/GGM/1081/813/2026/53 dated 11 August 2026 (Registration No. 53 of 2026)
+- Licence: 129 of 2025 dated 23 July 2025
+- Possession: RERA completion 2033; phased possession indicated from 2031
 - Nearby: Golf Course Extension Road 2 min, SPR 8 min, Sohna Road 10 min, Sector 55-56 Rapid Metro 10 to 15 min, NH-48 10 to 15 min, IGI Airport about 30 min
 
-## Pages
-- [Home](https://godrejverano.org/): overview, price list, floor plans, amenities, location map, payment plan, FAQ, enquiry form
-- [Disclaimer](https://godrejverano.org/disclaimer.html)
-- [Privacy policy](https://godrejverano.org/privacy.html)
+## Sections on the home page
+- Overview and key facts: https://godrejverano.org/#overview
+- HRERA registration details: https://godrejverano.org/#rera
+- Price list: https://godrejverano.org/#price
+- Floor plans: https://godrejverano.org/#plans
+- Amenities: https://godrejverano.org/#amenities
+- Specifications: https://godrejverano.org/#specs
+- Gallery: https://godrejverano.org/#gallery
+- Location and travel times: https://godrejverano.org/#location
+- Payment plan and booking process: https://godrejverano.org/#payment
+- FAQ: https://godrejverano.org/#faq
+- Enquiry and brochure: https://godrejverano.org/#enquiry
+
+## Other pages
+- Disclaimer: https://godrejverano.org/disclaimer.html
+- Privacy policy: https://godrejverano.org/privacy.html

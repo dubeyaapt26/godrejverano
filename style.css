@@ -490,3 +490,6 @@ picture.pic{display:contents}
   .ov-timeline b,.ov-timeline span{display:inline}
   .ov-timeline span::before{content:" · "}
 }
+.card__head h3{font-family:var(--font-head);font-size:1.5rem;margin-bottom:6px;color:var(--green)}
+.modal__box h3{font-family:var(--font-head);font-size:1.4rem;color:var(--green);margin-bottom:6px}
+.updated{font-size:.82rem;color:var(--muted);margin:-4px 0 14px}
