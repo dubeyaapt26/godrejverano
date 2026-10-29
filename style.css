@@ -470,3 +470,27 @@ picture.pic{display:contents}
 .band__ticks{display:flex;justify-content:space-between;font-size:.72rem;color:var(--muted);margin-top:50px}
 @media (max-width:1024px){.why-grid{grid-template-columns:1fr 1fr 1fr;gap:12px}.why{padding:18px}}
 @media (max-width:720px){.why-grid{grid-template-columns:1fr}.band{padding:18px 16px 14px}.band__range span{font-size:.7rem;white-space:normal;width:120px}.band__ticks{margin-top:64px}.band__range--new span{left:auto;right:0;text-align:right}}
+
+/* Overview points and timeline */
+.ov-pts{list-style:none;padding:0;margin:6px 0 0;display:grid;gap:10px}
+.ov-pts li{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.ov-pt__icon{flex:0 0 42px;width:42px;height:42px;border-radius:11px;background:var(--sand);color:var(--teal);display:grid;place-items:center}
+.ov-pt__icon svg{width:22px;height:22px}
+.ov-pts h3{font-size:1rem;margin:1px 0 3px}
+.ov-pts p{margin:0;font-size:.92rem;color:var(--muted);line-height:1.5}
+.ov-timeline{list-style:none;padding:0;margin:22px 0 4px;display:grid;grid-template-columns:repeat(5,1fr);position:relative}
+.ov-timeline::before{content:"";position:absolute;left:10%;right:10%;top:9px;height:2px;background:var(--line)}
+.ov-timeline li{text-align:center;position:relative;padding-top:24px}
+.ov-timeline li::before{content:"";position:absolute;left:50%;top:3px;transform:translateX(-50%);width:14px;height:14px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px #fff,0 0 0 4px var(--line)}
+.ov-timeline li:nth-child(-n+2)::before{background:var(--teal)}
+.ov-timeline b{display:block;font-size:.85rem;color:var(--green)}
+.ov-timeline span{font-size:.74rem;color:var(--muted);line-height:1.25;display:block}
+@media (max-width:720px){
+  .ov-pts li{padding:12px}
+  .ov-timeline{grid-template-columns:1fr;gap:6px;margin-top:16px}
+  .ov-timeline::before{left:9px;right:auto;top:8px;bottom:8px;width:2px;height:auto}
+  .ov-timeline li{text-align:left;padding:2px 0 2px 28px}
+  .ov-timeline li::before{left:9px;top:7px;transform:translateX(-50%)}
+  .ov-timeline b,.ov-timeline span{display:inline}
+  .ov-timeline span::before{content:" · "}
+}
