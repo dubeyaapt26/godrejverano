@@ -493,3 +493,10 @@ picture.pic{display:contents}
 .card__head h3{font-family:var(--font-head);font-size:1.5rem;margin-bottom:6px;color:var(--green)}
 .modal__box h3{font-family:var(--font-head);font-size:1.4rem;color:var(--green);margin-bottom:6px}
 .updated{font-size:.82rem;color:var(--muted);margin:-4px 0 14px}
+
+/* Payment schedule table */
+.pay-table-wrap{margin-top:24px}
+.pay-table{min-width:0}
+.pay-table td:last-child,.pay-table th:last-child{text-align:right;white-space:nowrap}
+.pay-table td:last-child strong{color:var(--green);font-family:var(--font-head);font-size:1.05rem}
+@media (max-width:720px){.pay-table th,.pay-table td{padding:12px 12px;font-size:.88rem}.pay-table td:last-child{white-space:normal}}
